@@ -1,3 +1,5 @@
+# A modified version of a script written by @FPLResearch
+
 # Install RStudio and import this script. 
 # Have an Excel named ids with a single column named Id and a list of id's to scrape in the same directory
 # Replace loop lengths in this file and run the script. It takes about 30 minutes for 31. Can be left running in the background.
@@ -66,8 +68,9 @@ for (i in 1:21) {
 remDr$close()
 rD$server$stop()
 
-#Extra code to gather the data in a clean format which you can paste into excel
+# Extra code to gather the data in a clean format which you can paste into excel
 
+# This doesn't seem to work for me
 saveRDS(data1, "21/data1.rds")
 saveRDS(data2, "21/data2.rds")
 
